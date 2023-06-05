@@ -1,0 +1,9 @@
+name: General Tests
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  typos:
+    uses: move-agency/actions-templates/.github/workflows/typos.yml@main
+    with:
+      config: tests/typos.toml
+      required: true

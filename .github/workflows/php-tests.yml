@@ -1,0 +1,18 @@
+name: PHP Tests
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  php:
+    uses: Move-Agency/actions-templates/.github/workflows/php-decomposer.yml@main
+    secrets:
+      SSH_PRIVATE_KEY_FOR_CLONING_NONPUBLIC_BACKEND_GIT_REPOSITORIES: ${{ secrets.SSH_PRIVATE_KEY_FOR_CLONING_NONPUBLIC_BACKEND_GIT_REPOSITORIES }}
+    with:
+      phpstan-level: 9
+      codestyle: Stellr
+      codestyle-branch: stellr
+      allow-style-failures: false
+      allow-phpstan-failures: false
+      phpcs-whitelist: tests/phpstan.autoload.inc.php tests/test.bootstrap.inc.php
+      php-extensions: autoload_psr-pprkut/autoload-psr@0.2.0
+      stable-php-versions: '["8.1", "8.3"]'
+      experimental-php-versions: '[]'

@@ -1,0 +1,25 @@
+# https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+charset = utf-8
+
+[{*.php,*.php.sample}]
+indent_style = space
+indent_size = 4
+
+[{*.sh,*.bash}]
+indent_style = space
+indent_size = 2
+
+[{*.md,*.txt}]
+indent_style = space
+
+[{*.xml,*.json,*.neon.dist,*.jq,*.yml}]
+indent_style = space
+indent_size = 4

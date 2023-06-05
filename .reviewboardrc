@@ -1,0 +1,10 @@
+# ReviewBoard Configuration for Lunr
+
+# Repository name
+REPOSITORY = "PhpMailer-Logger"
+
+# ReviewBoard Server URL
+REVIEWBOARD_URL = "https://reviews.moveagency.com"
+
+# Review Group
+TARGET_GROUPS = "stellr"
