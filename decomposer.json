@@ -1,1 +1,19 @@
-{}
+{
+    "Lunr.Halo": {
+        "url": "https://github.com/lunr-php/lunr.halo.git",
+        "version": "0.10.0",
+        "revision": "master",
+        "psr4": {
+            "prefix": "Lunr\\Halo",
+            "search-path": "/src/Lunr/Halo/"
+        }
+    },
+    "PHPMailer": {
+        "url": "https://github.com/PHPMailer/PHPMailer.git",
+        "version": "6.9.1",
+        "psr4": {
+            "prefix": "PHPMailer\\PHPMailer",
+            "search-path": "/src/"
+        }
+    }
+}
