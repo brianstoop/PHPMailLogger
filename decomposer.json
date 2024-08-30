@@ -8,6 +8,24 @@
             "search-path": "/src/Lunr/Halo/"
         }
     },
+    "Stellr": {
+        "url": "ssh://git@github.com/move-backend/stellr.git",
+        "version": "2.2.0",
+        "revision": "master",
+        "psr4": {
+            "prefix": "Stellr",
+            "search-path": "/src/Stellr/"
+        }
+    },
+    "influxdb-php": {
+        "url": "https://github.com/m2mobi/influxdb-php.git",
+        "version": "1.16.1",
+        "revision": "master",
+        "psr4": {
+            "prefix": "InfluxDB",
+            "search-path": "/src/InfluxDB/"
+        }
+    },
     "PHPMailer": {
         "url": "https://github.com/PHPMailer/PHPMailer.git",
         "version": "6.9.1",
