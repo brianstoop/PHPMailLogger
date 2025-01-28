@@ -9,7 +9,7 @@ jobs:
     with:
       phpstan-level: 9
       codestyle: Stellr
-      codestyle-branch: stellr
+      codestyle-branch: 2.3
       allow-style-failures: false
       allow-phpstan-failures: false
       phpcs-whitelist: tests/phpstan.autoload.inc.php tests/test.bootstrap.inc.php
